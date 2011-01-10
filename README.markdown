@@ -10,14 +10,18 @@ Sample Markup:
     <span class="lazy-img" data-src="images/img3.jpg"></span>
   
 Simple:
+<blockquote><p>
 $(function() {
     $('.lazy-img').gLoad();
 });
+</blockquote></p>
 
 With prelader:
+<blockquote><p>
 $(function() {
     $('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
 });
+</blockquote></p>
 
 [*Options*]
 
