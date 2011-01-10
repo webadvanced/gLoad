@@ -3,9 +3,9 @@
 [**Simple usage**]
 
 *Sample Markup:*
-`<span class="lazy-img" data-src="images/img1.jpg"></span>`
-`<span class="lazy-img" data-src="images/img2.jpg"></span>`
-`<span class="lazy-img" data-src="images/img3.jpg"></span>`
+	<span class="lazy-img" data-src="images/img1.jpg"></span>
+	<span class="lazy-img" data-src="images/img2.jpg"></span>
+	<span class="lazy-img" data-src="images/img3.jpg"></span>
 
 *Simple:*
 > $(function() {
