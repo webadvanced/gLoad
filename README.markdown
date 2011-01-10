@@ -10,27 +10,19 @@
 > <span class="lazy-img" data-src="images/img3.jpg"></span>
 
 *Simple:*
-<blockquote><p>
-$(function() {
-    $('.lazy-img').gLoad();
-});
-</p></blockquote>
+> $(function() {
+>    $('.lazy-img').gLoad();
+> });
 
 *With prelader:*
-<blockquote><p>
-$(function() {
-    $('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
-});
-</p></blockquote>
+> $(function() {
+>    $('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
+> });
 
 [**Options**]
 
-placeholder - path to image to preload. Default none.
-
-placeholderAsBg - Will use the placeholder image as a css style background image positioned center center. Default false.
-
-effect - The Jquery effect to run when the image in loaded. Default none.
-
-event - The Jquery event to fire. Default "scroll"
-
-container - Context. Default window.
+* placeholder - path to image to preload. Default none.
+* placeholderAsBg - Will use the placeholder image as a css style background image positioned center center. Default false.
+* effect - The Jquery effect to run when the image in loaded. Default none.
+* event - The Jquery event to fire. Default "scroll"
+* container - Context. Default window.
