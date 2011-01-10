@@ -1,29 +1,29 @@
 #gLoad a Jquery based lazy loading plugin for image galleries
 
-[*Simple usage*]
+[**Simple usage**]
 
-Sample Markup:
-<span class="lazy-img" data-src="images/img1.jpg"></span>
-<br /><br />
-<span class="lazy-img" data-src="images/img2.jpg"></span>
-<br /><br />
-<span class="lazy-img" data-src="images/img3.jpg"></span>
+*Sample Markup:*
+> <span class="lazy-img" data-src="images/img1.jpg"></span>
+> <br /><br />
+> <span class="lazy-img" data-src="images/img2.jpg"></span>
+> <br /><br />
+> <span class="lazy-img" data-src="images/img3.jpg"></span>
 
-Simple:
+*Simple:*
 <blockquote><p>
 $(function() {
     $('.lazy-img').gLoad();
 });
 </p></blockquote>
 
-With prelader:
+*With prelader:*
 <blockquote><p>
 $(function() {
     $('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
 });
 </p></blockquote>
 
-[*Options*]
+[**Options**]
 
 placeholder - path to image to preload. Default none.
 
