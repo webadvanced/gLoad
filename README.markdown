@@ -3,13 +3,13 @@
 [*Simple usage*]
 
 Sample Markup:
-<blockquote><p>
+<blockquote>
 <span class="lazy-img" data-src="images/img1.jpg"></span>
 <br /><br />
 <span class="lazy-img" data-src="images/img2.jpg"></span>
 <br /><br />
 <span class="lazy-img" data-src="images/img3.jpg"></span>
-</p></blockquote> 
+</blockquote> 
 Simple:
 <blockquote><p>
 $(function() {
