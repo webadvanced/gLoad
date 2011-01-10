@@ -8,14 +8,14 @@
 	<span class="lazy-img" data-src="images/img3.jpg"></span>
 
 *Simple:*
-> $(function() {
->    $('.lazy-img').gLoad();
-> });
+	$(function() {
+		$('.lazy-img').gLoad();
+	});
 
 *With prelader:*
-> $(function() {
->    $('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
-> });
+	$(function() {
+		$('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
+	});
 
 [**Options**]
 
