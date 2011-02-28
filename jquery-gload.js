@@ -36,7 +36,6 @@
         this.each(function() {
             var self = this;
             
-            console.log($(self).data("src"));
             if ("scroll" != settings.event ||
                     $(self).find("img").length  == 0 ||
                     settings.placeholder == $(self).find("img").attr('src') ||
@@ -48,7 +47,7 @@
                 if (settings.placeholder && settings.placeholderAsBg) {
                     $(self).css('background', 'transparent URL(' + settings.placeholder + ') no-repeat center center')
                 } 
-                else {
+                else if(settings.placeholder) {
                     $('<img />').attr('src', settings.placeholder).appendTo(self);
                 }
                 self.loaded = false;
@@ -62,12 +61,12 @@
                       $("<img />").bind("load", function() {
                               $(i)
                                   .hide()
-                                  .attr("src", $(self).data("src"))
+                                  .attr("src", $(self).attr("data-src"))
                                   [settings.effect](settings.effectspeed);
                               self.loaded = true;
-                      }).attr("src", $(self).data("src"));
+                      }).attr("src", $(self).attr("data-src"));
                     } else {
-                      $('<img />').attr("src", $(self).data("src")).appendTo(self);
+                      $('<img />').attr("src", $(self).attr("data-src")).appendTo(self);
                     }
                     $(self).removeAttr('data-src');
                     if(settings.placeholderAsBg) {
