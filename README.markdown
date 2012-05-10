@@ -3,19 +3,27 @@
 [**Simple usage**]
 
 *Sample Markup:*
+
+```html
 	<span class="lazy-img" data-src="images/img1.jpg"></span>
 	<span class="lazy-img" data-src="images/img2.jpg"></span>
 	<span class="lazy-img" data-src="images/img3.jpg"></span>
+```
 
-*Simple:*
+*Simple JS:*
+
+```javascript
 	$(function() {
 		$('.lazy-img').gLoad();
 	});
+```
 
-*With prelader:*
+*With preloader:*
+```javascript	
 	$(function() {
 		$('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
 	});
+```
 
 [**Options**]
 
