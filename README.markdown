@@ -21,7 +21,12 @@ $(function() {
 *With preloader:*
 ```javascript	
 $(function() {
-	$('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
+	var options = {
+		placeholder : 'images/loading-small.gif', 
+		effect : 'fadeIn', 
+		placeholderAsBg : true
+	};
+	$('.lazy-img').gLoad(options);
 });
 ```
 
