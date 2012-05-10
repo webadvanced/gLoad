@@ -5,24 +5,24 @@
 *Sample Markup:*
 
 ```html
-	<span class="lazy-img" data-src="images/img1.jpg"></span>
-	<span class="lazy-img" data-src="images/img2.jpg"></span>
-	<span class="lazy-img" data-src="images/img3.jpg"></span>
+<span class="lazy-img" data-src="images/img1.jpg"></span>
+<span class="lazy-img" data-src="images/img2.jpg"></span>
+<span class="lazy-img" data-src="images/img3.jpg"></span>
 ```
 
 *Simple JS:*
 
 ```javascript
-	$(function() {
-		$('.lazy-img').gLoad();
-	});
+$(function() {
+	$('.lazy-img').gLoad();
+});
 ```
 
 *With preloader:*
 ```javascript	
-	$(function() {
-		$('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
-	});
+$(function() {
+	$('.lazy-img').gLoad({placeholder : 'images/loading-small.gif', effect : 'fadeIn', placeholderAsBg : true});
+});
 ```
 
 [**Options**]
